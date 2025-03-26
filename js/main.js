@@ -6,7 +6,6 @@ let foodsSelect=document.querySelector("#foodsSelect")
 let foodsCount=document.querySelector("#foodsCount")
 
 
-let chosenUser=JSON.parse(window.localStorage.getItem("chosen"))||null
 
 
 
@@ -77,7 +76,6 @@ function takeOrder(event){
       }
       window.localStorage.setItem("orders",JSON.stringify(orders))
       showOrders(chosenUser)
-      window.localStorage.clear()
       
 }
 foodsForm.addEventListener("submit",takeOrder)

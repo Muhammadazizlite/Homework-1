@@ -23,3 +23,4 @@ let orders = JSON.parse(window.localStorage.getItem("orders")) || [
       {userId:3,foodId:1,count:1},
       {userId:1,foodId:4,count:5},
 ]
+let chosenUser=JSON.parse(window.localStorage.getItem("chosen"))||null
